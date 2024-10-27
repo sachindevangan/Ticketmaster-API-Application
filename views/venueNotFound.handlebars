@@ -1,0 +1,29 @@
+{{!
+This page will be rendered when no matches are found in 'POST http://localhost:3000/searchvenues'.
+You will render this page with the HTML paragraph defined in the lab assignment.
+}}
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="/public/css/main-styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </nav>
+      <h1>{{siteName}}</h1>
+      <h2>{{pageHeader}}</h2>
+    </header>
+    <main>
+      <section>
+        <h3>No Venues Found</h3>
+        <p>We're sorry, but we couldn't find any venues that match your search for "{{searchVenueTerm}}". Please try again with a different search term.</p>
+        <a href="/">Make another search</a>
+        </section>
+    </main>
+  </body>
